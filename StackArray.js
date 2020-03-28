@@ -44,12 +44,16 @@ class Stack {
         }
     }
     reverse() {
-        var top = this.top =0;
+       let  j=this.arr.length;
+       for (let i = 0;  i<(this. arr.length/2); i++) {
+           j--;
+          let tmp=this.arr[i];
+           this.arr[i]=this.arr[j];
+           this.arr[j]=tmp;
+       console.log(this.arr[j]);
 
-        while (top <= this.arr.length - 1) {
-            console.log(this.arr[top]);
-            top++;
-        }
+       }
+       
     }
     clear() {
         this.arr.length = 0;
@@ -70,6 +74,7 @@ S.push(2);
 S.push(0);
 S.pop(0);
 console.log(S.arr);
+console.log("Print :");
 
 S.print();
 
