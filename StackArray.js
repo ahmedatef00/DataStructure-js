@@ -47,6 +47,7 @@ class Stack {
        let  j=this.arr.length;
        for (let i = 0;  i<(this. arr.length/2); i++) {
            j--;
+           //Reverse by Swapping 
           let tmp=this.arr[i];
            this.arr[i]=this.arr[j];
            this.arr[j]=tmp;
